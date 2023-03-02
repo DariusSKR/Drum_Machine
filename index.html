@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Genos" />
+    <title>Drum Machine Bam Bam</title>
+  </head>
+  <body>
+    <!-- Audio-->
+
+    <audio id="Heater-1">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Heater-2">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Heater-3">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Heater-4">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Clapp">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Open-HH">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Kick-and-hat">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Kick">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="Closed-HH">
+      <source
+        src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!-- Audio-->
+    <div id="container">
+      <div
+        id="s-container"
+        style="
+          background: rgb(74, 66, 210);
+          background: linear-gradient(
+            45deg,
+            rgba(74, 66, 210, 0.10407913165266103) 0%,
+            rgba(205, 221, 13, 1) 35%,
+            rgba(0, 212, 255, 1) 100%
+          );
+        "
+      >
+        <div id="firstRow">
+          <div class="Q" id="Q">Q</div>
+          <div class="W">W</div>
+          <div class="E">E</div>
+        </div>
+        <div id="secondRow">
+          <div class="A">A</div>
+          <div class="S">S</div>
+          <div class="D">D</div>
+        </div>
+        <div id="thirdRow">
+          <div class="Z">Z</div>
+          <div class="X">X</div>
+
+          <div class="C">C</div>
+        </div>
+        <div class="displayDiv" style="margin-left: 35px">
+          Key pressed:<span
+            style="
+              margin-left: 15px;
+              background-color: rgba(142, 60, 60, 0.808);
+              padding: 5px;
+              border: 1px solid black;
+              border-radius: 25px;
+            "
+            class="display"
+            >N/A</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
